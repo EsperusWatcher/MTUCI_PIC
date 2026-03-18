@@ -1,0 +1,152 @@
+body {
+    background: #1abc9c;
+    font-family: Tahoma, Arial, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    position: relative;
+    padding: 20px 0;
+}
+
+.header img {
+    display: block;
+    width: 318px;
+    margin: 0 auto;
+}
+
+.header-links {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.registration-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.95);
+    font-size: 1em;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: 0;
+    border-color: #fff;
+    background: #fff;
+}
+
+.form-control.error {
+    border-color: #ff6b6b;
+    background: #fff0f0;
+}
+
+.field-error {
+    color: #ff6b6b;
+    margin-top: 8px;
+    font-size: 0.95em;
+    font-weight: bold;
+}
+
+.errors {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 0, 0, 0.2);
+    border: 3px solid #ff6b6b;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    background: #fff;
+    color: #1abc9c;
+    border: 0;
+    padding: 15px 40px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
+}
+
+.nav {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: right
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.navс {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.navс a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1em;
+    text-align: right
+}
+
+.navс a:hover {
+    text-decoration: underline;
+}

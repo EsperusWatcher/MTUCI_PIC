@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Django Public Blog - вход</title>
+    <link rel="stylesheet" href="{% static 'css/lab6_auth_form.css' %}">
+</head>
+<body class="auth-page">
+    <div class="header">
+        <img src="{% static 'img/logo.png' %}" />
+    </div>
+    
+    <div class="content"> 
+        <h1>Вход</h1>
+        <form method="POST" class="auth-form">
+            {% csrf_token %}
+            
+            {% if form.errors %}
+            <div class="errors">
+                {{ form.errors }}
+            </div>
+            {% endif %}
+            
+            <div class="form-group">
+                <label for="username">Имя пользователя:</label>
+                <input type="text" 
+                name="username" 
+                       id="username"
+                       placeholder="Введите имя пользователя"
+                       value="{{ form.username }}"
+                       class="form-control {% if form.errors %}error{% endif %}">
+                    </div>
+            
+            <div class="form-group">
+                <label for="password">Пароль:</label>
+                <input type="password" 
+                       name="password" 
+                       id="password"
+                       placeholder="Введите пароль"
+                       class="form-control {% if form.errors %}error{% endif %}">
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Войти</button>
+                    <div class="navс">
+                        <label for="registration">Нет аккаунта?</label>
+              <a name="registration" href="{% url 'registration' %}">Регистрация</a>
+            </div>
+        </form>
+        <div class="nav">
+            <a href="{% url 'archive' %}">← Все записи</a>
+        </div>
+    </div>
+</body>
+</html>

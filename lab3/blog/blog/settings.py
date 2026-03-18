@@ -117,5 +117,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static'),  # Путь к папке static в корне проекта
+    BASE_DIR / "static",
 ]
